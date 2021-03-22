@@ -1,0 +1,152 @@
+/*	 
+            ___.                     __                                                     
+    _____   \_ |__    ____   __ __ _/  |_    ___________     ____    _____  _____     ____  
+    \__  \   | __ \  /  _ \ |  |  \\   __\  /  ___/\__  \   /    \  /     \ \__  \   /  _ \ 
+     / __ \_ | \_\ \(  <_> )|  |  / |  |    \___ \  / __ \_|   |  \|  Y Y  \ / __ \_(  <_> )
+    (____  / |___  / \____/ |____/  |__|   /____  >(____  /|___|  /|__|_|  /(____  / \____/ 
+         \/      \/                             \/      \/      \/       \/      \/         
+	author:sanmao
+	blog:https://inew.io
+	github:https://github.com/gkm0
+*/
+/*字体*/
+/*@font-face {
+	font-family: Consola;
+	src: url(./fonts/consola.ttf);
+}*/
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+html {
+	font-size: 62.5%
+}
+
+body {
+	margin: 0;
+	background-color: #272822;
+	background-image: -o-linear-gradient(45deg, #131319 0%, #272822 100%);
+	background-image: linear-gradient(45deg, #131319 0%, #272822 100%);
+	background-attachment: fixed;
+	color: #F8E1AA
+}
+
+pre {
+	font-family: "Jetbrains Mono","Source Code Pro",Monaco,Menlo,Consolas,"Courier New",Courier,"Hiragino Sans GB","Microsoft YaHei",monospace;
+	font-size: 1.4rem;
+	line-height: 1.4;
+	letter-spacing: 0.01rem
+	margin: 3rem auto;
+	padding: 0 2.0rem;
+	max-width: 120ch;
+	white-space: pre-wrap;
+}
+
+@media (min-width: 46.25em) {
+	pre{
+		padding: 0 2.5rem
+	}
+}
+
+@media (min-width: 61.25em) {
+	pre{
+		margin: 5rem auto;
+		padding: 0 3.0rem
+	}
+}
+
+@media (min-width: 46.25em) {
+	pre{
+		line-height: 1.3
+	}
+}
+
+span {
+	display: inline-block;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	cursor: default
+}
+
+span:hover {
+	position: relative;
+	z-index: 1;
+	background-color: #272822;
+	-webkit-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3)
+}
+
+
+
+@-webkit-keyframes blinker {
+	50% {
+		border-right-color: #272822
+	}
+}
+
+@keyframes blinker {
+	50% {
+		border-right-color: #272822
+	}
+}
+
+/*标题*/
+h1{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/*注释*/
+.comment{
+	color: #75715e;  /*#7D8C93;*/  /*#ccdf32;*/
+}
+.comment a:link{color: #75715e;}
+.comment a:visited{color: #75715e;}
+.comment a:hover{color: #FF00FF;}
+/*注释标签*/
+.comment_tag{
+	color: #FFA17F;   /*#E0E2E4*/
+}
+/*关键字*/
+.keyword{
+	color: #f92672;
+	font-weight: bold;
+}
+/*自定义文本*/
+.text_DIY{
+	color: #a6e22e;
+}
+.text_DIY a{
+	color: #a6e22e;
+}
+.text_DIY a:link {color:#a6e22e;} /* 未访问的链接 */
+.text_DIY a:visited {color:#a6e22e;} /* 已访问的链接 */
+.text_DIY a:hover {color:#FF00FF;} /* 鼠标划过链接 */
+/*类*/
+.className{
+	color: #fffff0;
+	font-weight: bold;
+}
+/*引入的类*/
+.classNameImport{
+	color: #D25252;
+	font-weight: bold;
+}
+/*方法*/
+.method{
+	color: #FFF;
+}
+/*变量*/
+.variable{
+	color: #A4B0C0;
+}
+/*底部*/
+#footer {
+	margin-top: 10rem;
+	margin-bottom: 5rem;
+	text-align: center;
+}

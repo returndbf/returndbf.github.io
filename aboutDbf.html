@@ -1,0 +1,58 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-03-22 19:48:54
+ * @LastEditTime: 2021-03-22 20:31:42
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \undefinedd:\桌面\sanmao\index.htm
+-->
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+	<meta charset=utf-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css" >
+	<title>jambo!</title>
+	
+</head>
+
+	<h1>Welcome to dbf's homepage!</h1>
+<div id="code">
+<pre><span class="comment">
+/**
+*
+* <span class="comment_tag">@author</span> dbf
+* 
+* <span class="comment_tag">@Time</span> <span id="time"></span>
+*
+*/
+	</span>
+	<span class="keyword">public class</span> <span class="className">Dbf</span>{		  <span class="comment">//关于我</span>
+	<span class="keyword">public static void</span> <span class="method">main</span>(<span class="classNameImport">String</span>[] args) {
+		<span class="classNameImport">String</span> <span class="variable">nickName</span>,<span class="variable">description</span>,<span class="variable">skills</span>,<span class="variable">hobbys</span>,<span class="variable">dateOfBirth</span>,<span class="variable">gender</span>,<span class="variable">address</span>,<span class="variable">idol</span>;
+		<span class="variable">nickName</span> = <span class="text_DIY">"dbf"</span>;  	  <span class="comment">//昵称：大笨峰</span>
+		<span class="variable">description</span> = <span class="text_DIY">" A contradictory person."</span>;  <span class="comment">//描述：一个矛盾的人。</span>
+		<span class="variable">skills</span> = <span class="text_DIY">"noting"</span>; <span class="comment">//技能：无</span>
+		<span class="variable">hobbys</span> = <span class="text_DIY">"music(Rock'N'Roll、Funk、Reggae···)"</span>; <span class="comment">//爱好：音乐(摇滚乐、放克乐、雷鬼乐···)</span>
+		<span class="variable">dateOfBirth</span> = <span class="text_DIY">"1999-09"</span>;  <span class="comment">//生日：1999-09</span>
+		<span class="variable">gender</span> = <span class="text_DIY">"male"</span>;          <span class="comment">//性别：男</span>
+		<span class="variable">address</span> = <span class="text_DIY">"Shanxi"</span>;       <span class="comment">//地址：山西</span>
+		<span class="variable">idol</span> = <span class="text_DIY">"Mao Zedong"</span>;		<span class="comment">//偶像：毛泽东</span>
+		<span class="classNameImport">System</span>.out.<span class="method">print</span>(<span class="variable">nickName</span>+<span class="text_DIY">","</span>+<span class="variable">description</span>+<span class="text_DIY">","</span>+<span class="variable">skills</span>+<span class="text_DIY">","</span>+<span class="variable">hobbys</span>+<span class="text_DIY">","</span>+<span class="variable">dateOfBirth</span>+<span class="text_DIY">","</span>+<span class="variable">gender</span>+<span class="text_DIY">","</span>+<span class="variable">address</span>+<span class="text_DIY">","</span>+<span class="variable">idol</span>); 
+	}
+}
+</pre>
+</div>
+<div id="footer">©2020 dbf</div>
+</body>
+<script>
+	var time=new Date();
+	
+		document.getElementById("time").innerHTML=time.toLocaleDateString();
+	
+	
+	
+	
+	console.log(time.toLocaleString());
+</script>
+</html>

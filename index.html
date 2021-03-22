@@ -1,494 +1,104 @@
 <!--
  * @Author: dbf
- * @Date: 2020-08-10 14:42:54
- * @LastEditTime: 2020-09-03 09:09:12
+ * @Date: 2021-03-22 19:03:00
+ * @LastEditTime: 2021-03-22 20:35:01
  * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \html test\日历 .html
+ * @Description: about dbf
 -->
-
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>20200810表格</title>
-	<style>
-		table {
-			text-align: center;
-			width: 413px;
-			height: 400px;
-			font-size: 20px;
-		}
-
-		.btn {
-			width: 100px;
-		}
-
-		#btn1 {
-			width: 50px;
-		}
-
-		.btn,
-		#btn1,
-		#savebwl {
-			display: inline-block;
-			padding: .3em .5em;
-			background-image: linear-gradient(#ddd, #bbb);
-			border: 1px solid rgba(0, 0, 0, .2);
-			border-radius: .3em;
-			box-shadow: 0 1px white inset;
-			text-align: center;
-			text-shadow: 0 1px 1px black;
-			color: white;
-			font-weight: bold;
-		}
-
-		.btn:active {
-			box-shadow: .05em .1em .2em rgba(0, 0, 0, .6) inset;
-			border-color: rgba(0, 0, 0, .3);
-			background: #bbb;
-		}
-
-		#btn1:active {
-			box-shadow: .05em .1em .2em rgba(0, 0, 0, .6) inset;
-			border-color: rgba(0, 0, 0, .3);
-			background: #bbb;
-		}
-
-		#savebwl:active {
-			box-shadow: .05em .1em .2em rgba(0, 0, 0, .6) inset;
-			border-color: rgba(0, 0, 0, .3);
-			background: #bbb;
-		}
-
-		#txt1,
-		#txt2,
-		#bwl {
-			transition: border linear .2s, box-shadow linear .5s;
-
-			-moz-transition: border linear .2s, -moz-box-shadow linear .5s;
-
-			-webkit-transition: border linear .2s, -webkit-box-shadow linear .5s;
-
-			-o-transition: border linear .2s, -webkit-box-shadow linear .5s;
-
-			outline: none;
-			border-color: rgba(33, 131, 148, 0.75);
-
-			box-shadow: 0 0 8px rgba(33, 131, 148, 0.75);
-
-			-moz-box-shadow: 0 0 8px rgba(33, 131, 148, 0.75);
-
-			-webkit-box-shadow: 0 0 8px rgba(33, 131, 148, 0.75);
-
-			-o-box-shadow: 0 0 8px rgba(33, 131, 148, 0.75);
-
-		}
-
-		.day {
-			cursor: pointer;
-		}
-
-		.hide {
-			display: none;
-		}
-
-		.show {
-			display: block;
-		}
-
-		.havebwl {
-			color: tomato;
-			font-weight: bold;
-		}
-
-		.nowbwl {
-			color: aqua;
-		}
-
-		#all {
-			position: fixed;
-			top: 50%;
-			left: 50%;
-			margin-left: -207px;
-			margin-top: -250px;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to dbf's zone</title>
+    <link rel="stylesheet" href="style.css" >
 </head>
-
 <body>
-	<div id="all">
-		年：<input type="text" id="txt1" value="">
-		月：<input type="text" id="txt2" value="">
-		<input type="button" id="btn1" onclick="change()" value="跳转"><br /><br />
-		<input type="button" id="y1" class="btn" onclick="y1()" value="上一年">
-		<input type="button" id="y2" class="btn" onclick="y2()" value="下一年">
-		<input type="button" id="m1" class="btn" onclick="m1()" value="上一月">
-		<input type="button" id="m2" class="btn" onclick="m2()" value="下一月"><br /><br />
-		<table border="1px">
-			<thead id="th1">
-
-
-			</thead>
-			<tbody id="tb1"></tbody>
-		</table>
-
-		<div id="tjbwl" class="hide">
-			<input type="text" value="" id="bwl">
-			<input type="text" value="" id="shi">
-			<input type="text" value="" id="fen">
-			<input type="button" id="savebwl" value="保存" onclick="savebwl()">
-		</div>
-	</div>
+    <section>
+        <div class="card">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="哆啦1.jpg"  alt="">
+                </div>
+                <div class="contentBx bc1" onclick="aboutDbf()">
+                    <div>
+                        <h2>关于大笨峰</h2>
+                        <p>Get more information aboout dbf</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="哆啦2.jpg"  alt="">
+                </div>
+                <div class="contentBx bc2">
+                    <div>
+                        <h2>个人公众号</h2>
+                        <p>Record some personal things</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="哆啦3.jpg"  alt="">
+                </div>
+                <div class="contentBx bc3">
+                    <div>
+                        <h2>Bilibili</h2>
+                        <p>There is only one video I made</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="哆啦4.jpg"  alt="">
+                </div>
+                <div class="contentBx bc4">
+                    <div>
+                        <h2>以前做的一些图片</h2>
+                        <p>The level is not good</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="哆啦5.jpg"  alt="">
+                </div>
+                <div class="contentBx bc5">
+                    <div>
+                        <h2>以前做的一些网页项目</h2>
+                        <p>It'll be put in later</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="哆啦6.jpg"  alt="">
+                </div>
+                <div class="contentBx bc6" onclick="o()">
+                    <div>
+                        <h2>其他一些</h2>
+                        <p>Other things</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
-
-</html>
-<script src="yinli.js"></script>
 <script>
-	var shi = document.getElementById("shi")
-	var fen = document.getElementById("fen")
-	var bwl = document.getElementById("bwl");
-	var tjbwl = document.getElementById("tjbwl");
-	var tb = document.getElementById("tb1");
-	var trs = tb.getElementsByTagName("tr");
-	var date1 = new Date();
-	var year1 = date1.getFullYear();//当前年
-	var month1 = date1.getMonth();//当前月，0开始
-	var day1 = date1.getDay();//当前星期
-	var date2 = date1.getDate();//当前日期
-	var mon = (month1 + 1);
-	var hour = date1.getHours();
-	var minu = date1.getMinutes();
-	var sec = date1.getSeconds();
-	document.getElementById("txt1").value = year1;
-	document.getElementById("txt2").value = month1 + 1;
-	change();
-
-	function y1() {
-		var year1 = document.getElementById("txt1").value;
-		year1--;
-		if (year1 < 0) {
-			year1 = 0
-		}
-		document.getElementById("txt1").value = year1;
-		change();
-	}
-	function y2() {
-		var year1 = document.getElementById("txt1").value;
-		year1++;
-
-		document.getElementById("txt1").value = year1;
-		change();
-	}
-
-	function m1() {
-		var month1 = document.getElementById("txt2").value;
-		var year1 = document.getElementById("txt1").value;
-		month1--;
-
-		if (month1 < 1) {
-			year1--
-			month1 = 12
-		}
-		document.getElementById("txt1").value = year1;
-		document.getElementById("txt2").value = month1;
-		change();
-	}
-	function m2() {
-		var year1 = document.getElementById("txt1").value;
-		var month1 = document.getElementById("txt2").value;
-		month1++;
-		if (month1 > 12) {
-			month1 = 1
-			year1++;
-		}
-		document.getElementById("txt1").value = year1;
-		document.getElementById("txt2").value = month1;
-
-		change();
-	}
-
-
-	//thead添加星期表头
-	var th = document.getElementById("th1")
-	function week() {
-		var th_tr = document.createElement("tr");
-		th.appendChild(th_tr);
-		var week = ["日", "壹", "贰", "叁", "肆", "伍", "陆"]
-		for (var i = 0; i < week.length; ++i) {
-			var th_td = document.createElement("td")
-			th_td.innerText = (week[i]);
-			th_tr.appendChild(th_td)
-		}
-	}
-	week();
-	//新建tr
-	function tab(trs, tds) {
-		var tb = document.getElementById("tb1")
-		for (var i = 0; i < trs; ++i) {
-			tb.appendChild(xjtr())
-			function xjtr() {
-				var tr = document.createElement("tr")
-				for (var j = 0; j < tds; ++j) {
-					tr.appendChild(xjtd())
-				}
-				return tr;
-			}
-		}
-	}
-	//新建td
-	function xjtd() {
-		var td = document.createElement("td")
-		return td;
-	}
-	//跳转指定日期
-	/* 	function ny(){
-			var nian=document.getElementById("txt1").value;
-			var yue=document.getElementById("txt2").value;
-			var date1=new Date();
-			var year1=date1.getFullYear();//当前年
-			var month1=date1.getMonth();
-			nian=year1;
-			yue=month1;
-			console.log(nian)
-		} */
-	var nian = document.getElementById("txt1").value;
-	var yue = document.getElementById("txt2").value;
-
-	function change() {
-		var nian = document.getElementById("txt1").value;
-		var yue = document.getElementById("txt2").value;
-
-		if (yue > 12 || yue < 1) {
-			return;
-		}
-		var mon;
-		switch (yue) {
-			case "1": mon = 31; break;
-			case "2": mon = 28 + isrn(nian); break;
-			case "3": mon = 31; break;
-			case "4": mon = 30; break;
-			case "5": mon = 31; break;
-			case "6": mon = 30; break;
-			case "7": mon = 31; break;
-			case "8": mon = 31; break;
-			case "9": mon = 30; break;
-			case "10": mon = 31; break;
-			case "11": mon = 30; break;
-			case "12": mon = 31; break;
-		}
-		tb.innerHTML = null;
-		tab(6, 7);
-		var day = []
-		for (var i = 1; i <= mon; i++) {
-			day.push(i)
-		}
-		var dayindex = 0;
-		var kong = getweek(nian, yue, 1);
-		if (kong == 7) { kong = 0 }
-		var trs = tb.getElementsByTagName("tr")
-		for (var i = 0; i < trs.length; i++) {
-			var tds = trs[i].getElementsByTagName("td")
-			for (var j = 0; j < tds.length; j++) {
-				if (kong > 0) {
-					kong--;
-					continue;
-				}
-				if (dayindex < mon) {
-					var yin = calendar.solar2lunar(nian, yue, dayindex + 1);
-					tds[j].innerHTML = day[dayindex] + "<br/>" + (yin.Term == null ? (yin.IDayCn == "初一" ? yin.IMonthCn : yin.IDayCn) : yin.Term);
-
-					tds[j].className = "day";
-					tds[j].setAttribute("date", nian + "" + yue + "" + (dayindex + 1));
-					tds[j].onclick = setbwl;
-					var tit = GetCookies(nian + "" + yue + "" + (dayindex + 1));
-					
-
-					if (tit != null && tit != "") {
-						tds[j].setAttribute("title", tit);
-						tds[j].className += " havebwl";
-						var now = year1 + "" + (month1 + 1) + "" + date2
-						var da = tds[j].getAttribute("date");
-						console.log(da)
-						console.log(now)
-						if (now == da) {
-							tds[j].className += " nowbwl"
-						}
-					}
-
-					dayindex++;
-				}
-			}
-		}
-		isnull6();
-		isnull5();
-
-	}
-
-
-	//判断第六行是否为空，是则删除
-	function isnull6() {
-		var delhang6 = document.getElementById("tb1").rows[5].cells[0];
-		var del6 = delhang6.innerHTML;
-		if (!del6) {
-			delhang6.parentNode.remove();
-		}
-
-	}
-	function isnull5() {
-		var delhang5 = document.getElementById("tb1").rows[4].cells[0];
-		var del5 = delhang5.innerHTML;
-		if (!del5) {
-			delhang5.parentNode.remove();
-		}
-
-	}
-
-	//判断是否闰年
-	function isrn(nian) {
-
-		if (nian % 400 == 0) {
-
-			return 1;
-		}
-		else if (nian % 4 == 0 && nian % 100 != 0) {
-			return 1;
-		}
-		else {
-			return 0;
-		}
-	}
-
-	function getweek(nian, yue, day) {
-		var date1 = new Date();
-		var year1 = date1.getFullYear();
-		var month1 = date1.getMonth();
-		var date2 = date1.getDate();
-		var Week = date1.getDay();
-
-		var zhiding = getsumday(nian, yue, day);
-
-		var dangqian = getsumday(year1, month1 + 1, date2);
-
-		var jian = dangqian - zhiding;
-		var yu = jian % 7;
-		var jianyu = Week - yu;
-		if (jianyu < 1) {
-			jianyu += 7;
-		}
-		if (jianyu > 7) {
-			jianyu -= 7;
-		}
-		return jianyu;
-	}
-
-	function getsumday(nian, yue, day) {
-		var mons = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-		var yd = 0;
-		var md = 0;
-		for (let i = 1; i < nian; i++) {
-			yd += 365 + isrn(i);
-		}
-		for (let i = 0; i < yue - 1; i++) {
-			md += mons[i];
-		}
-		if (yue > 2) {
-			md += isrn(nian);
-		}
-		return yd + md + day;
-	}
-
-	function setbwl() {
-
-		bwlid = this.getAttribute("date");
-		tjbwl.className = "show";
-	
-		
-	}
-	
-	function setTimeCookie() {
-		var timeobj = new Object()
-		timeobj.nian = bwlid.substring(0, 4)
-		if (yue.value > 10) {
-			timeobj.yue = bwlid.substring(4, 6)
-			timeobj.ri = bwlid.substring(6)
-
-		}
-		else {
-			timeobj.yue = bwlid.substring(4, 5)
-			timeobj.ri = bwlid.substring(5)
-		}
-		timeobj.shi = shi.value;
-		timeobj.fen = fen.value;
-		timeobj.nr = bwl.value;
-		return timeobj;
-
-	}
-
-	function savebwl() {
-		var u = setTimeCookie();
-		console.log(u)
-		SetCookies(bwlid, JSON.stringify(u));
-		bwl.value = "";
-		tjbwl.className = "hide";
-		change(nian, yue);
-		location.reload();
-	}
-
-	function fun() {
-		var arr = document.cookie.split(";")
-		console.log(arr)
-		for (var i = 0; i < arr.length; ++i) {
-			var arr1 = arr[i].split("=")
-			console.log(arr[i])
-			
-			arr1 = JSON.parse(arr1[1])
-			console.log(arr1)
-			if (arr1.nian != year1 || arr1.yue != mon) {
-				continue;
-			}
-			var second = (arr1.ri - date2) * 86400 + (arr1.shi - hour) * 3600 + (arr1.fen - minu) * 60 - sec;
-			if (second < 0) {
-				alert("错过了" + arr1.nr)
-			}
-			else {
-				setTimeout(function () { mess(arr1.nr) }, second * 1000)
-			}
-		}
-
-	}
-	fun()
-	function SetCookies(key, content, seconds = 31536000) {
-		var d = new Date();
-		d.setTime(d.getTime() + seconds * 1000);
-		document.cookie = key + "=" + content + ";expires=" + d.toGMTString();
-	}
-	function GetCookies(name) {
-		var Cookies = document.cookie.split(";");
-		for (var i = 0; i < Cookies.length; i++) {
-			var arr = Cookies[i].split("=")
-			
-			if (arr[0].trim() == name) {
-				var nr=JSON.parse(arr[1])
-				return nr.nr;
-			}
-		}
-		return null;
-	}
-	 function mess(msg) {
-		const permission = Notification.permission;
-    const n =new Notification('备忘录通知',{
-      body: msg,
-	  image:"https://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E5%9B%BE%E7%89%87&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&hd=undefined&latest=undefined&copyright=undefined&cs=1141259048,554497535&os=933218164,348838775&simid=3512635485,227490761&pn=3&rn=1&di=88990&ln=1617&fr=&fmq=1598946174936_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Fa1.att.hudong.com%2F05%2F00%2F01300000194285122188000535877.jpg&rpstart=0&rpnum=0&adpicid=0&force=undefined"
-      });
-      n.onclick = function(e){
-          window.focus();
-      } 
-	 }
-		
-       
-	
-	Notification.requestPermission(function(result) { if (result === 'denied') { alert('当前页面在请求浏览器通知权限，已被您驳回！为保证更好的交互体验，请允许浏览器提示！'); return; } if (result === 'default') { alert('请求浏览器通知权限错误！'); return; } });一直dinied 
-
+  function aboutDbf(){
+    window.open("aboutDbf.html");
+  }
+ 
 </script>
+</html>
