@@ -1,7 +1,7 @@
 <!--
  * @Author: dbf
  * @Date: 2021-03-22 19:03:00
- * @LastEditTime: 2021-03-23 18:19:24
+ * @LastEditTime: 2021-03-23 13:40:42
  * @LastEditors: Please set LastEditors
  * @Description: about dbf
 -->
@@ -14,25 +14,20 @@
     <title>Welcome to dbf's zone</title>
     <link rel="stylesheet" href="style.css" >
     <link rel="stylesheet" href="toggle.css" >
-    <style>
-        .bc1:hover{
-            background-color: yellow;
-        }
-    </style>
 </head>
 <body>
-    <!-- <input type="checkbox" id="toggle" class="toggle--checkbox">
+    <input type="checkbox" id="toggle" class="toggle--checkbox">
 <label for="toggle" class="toggle--label">
   <span class="toggle--label-background"></span>
 </label>
-<div class="background"></div> -->
+<div class="background"></div>
     <section>
         <div class="card">
             <div class="box">
                 <div class="imgBx">
                     <img src="哆啦1.jpg"  alt="">
                 </div>
-                <div class="contentBx bc1" onclick="aboutDbf()" onblur="change()">
+                <div class="contentBx bc1" onclick="aboutDbf()">
                     <div>
                         <h2>关于大笨峰</h2>
                         <p>Get more information aboout dbf</p>
@@ -110,9 +105,6 @@
 <script>
   function aboutDbf(){
     window.open("aboutDbf.html");
-  }
-  function change(){
-      document.body.style.backgroundColor=="#FF0000"
   }
  
 </script>

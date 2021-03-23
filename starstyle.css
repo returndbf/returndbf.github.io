@@ -1,0 +1,17 @@
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+
+body {
+  background-color: black;overflow:hidden;
+}
+.star {
+ color: yellow;
+ animation-name: blink;
+ animation-duration: 2s;
+animation-iteration-count: infinite;
+
+}
+@keyframes blink {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
