@@ -1,7 +1,7 @@
 <!--
  * @Author: dbf
  * @Date: 2021-03-22 19:03:00
- * @LastEditTime: 2021-03-23 18:19:24
+ * @LastEditTime: 2021-03-24 19:54:11
  * @LastEditors: Please set LastEditors
  * @Description: about dbf
 -->
@@ -45,7 +45,7 @@
                 <div class="imgBx">
                     <img src="哆啦2.jpg"  alt="">
                 </div>
-                <div class="contentBx bc2">
+                <div class="contentBx bc2" onclick="weChatSubscription()" onblur="change()">
                     <div>
                         <h2>个人公众号</h2>
                         <p>Record some personal things</p>
@@ -110,6 +110,9 @@
 <script>
   function aboutDbf(){
     window.open("aboutDbf.html");
+  }
+  function weChatSubscription(){
+      window.open("WeChat Subscription.html")
   }
   function change(){
       document.body.style.backgroundColor=="#FF0000"
